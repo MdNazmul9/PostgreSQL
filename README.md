@@ -6,17 +6,17 @@
 CREATE FUNCTION trigger_function()
 	RETURNS TRIGGER
   	LANGUAGE PLPGSQL
-	AS $$
-  	BEGIN
-    		-- trigger logic
-   	END;
-   	$$
+AS $$
+BEGIN
+	-- trigger logic
+END;
+$$
 
 ```
 # Trigger statement
 
 ```
- CREATE TRIGGER trigger_name
+CREATE TRIGGER trigger_name
 	{BEFORE | AFTER} {event}
 	ON table_name
 	[FOR [EACH] { ROW | STATEMENT}]
