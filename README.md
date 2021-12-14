@@ -1,6 +1,6 @@
 # PostgreSQL
 
-# PostgreSQL trigger function basic
+# PostgreSQL trigger function basic syntex
 
 ```
 CREATE FUNCTION trigger_function()
