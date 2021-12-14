@@ -78,7 +78,7 @@ create trigger calc_total_insert
 before insert
 on book
 for each row
-execute procedure calc_total_price;
+execute procedure calc_total_price();
 
 
 ```
