@@ -4,13 +4,13 @@
 
 ```
 CREATE FUNCTION trigger_function()
-  RETURNS TRIGGER
-  LANGUAGE PLPGSQL
-  AS $$
-  BEGIN
-    -- trigger logic
-   END;
-   $$
+	RETURNS TRIGGER
+  	LANGUAGE PLPGSQL
+	AS $$
+  	BEGIN
+    		-- trigger logic
+   	END;
+   	$$
 
 ```
 # Trigger statement
@@ -22,8 +22,6 @@ CREATE FUNCTION trigger_function()
 	[FOR [EACH] { ROW | STATEMENT}]
 		EXECUTE PROCEDURE trigger_function
 	
-
-
 ```
 
 # create table
@@ -43,6 +41,15 @@ insert into book values (101, 'Database Management System', 450.5, 5);
 
 insert into book values (102, 'Database Query Language', 350.5, 5);
 
+```
+# delete all row
+```
+delete from book;
+
+```
+# comment PostgresSQL
+```
+/* delete from book;*/
 ```
 
 # Select All data from the table / query table
