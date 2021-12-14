@@ -58,6 +58,21 @@ select * from book;
 ```
 # Create a tigger for calculating total price 
 ```
+/* TRIGGER FUNCTION */
+create or replace function calc_total_price()
+return trigger
+as $body$
+declare
+	total numeric;
+begin
+	total = new.item_price * new.no_copies;
+	new.total_price = total;
+	return new;
+
+end;
+$body$ language plpgsql; 
+
+/* TRIGGER STATEMENT */
 
 ```
 
