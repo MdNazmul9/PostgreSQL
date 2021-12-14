@@ -13,6 +13,18 @@ CREATE FUNCTION trigger_function()
    $$
 
 ```
+# Trigger statement
+
+```
+ CREATE TRIGGER trigger_name
+	{BEFORE | AFTER} {event}
+	ON table_name
+	[FOR [EACH] { ROW | STATEMENT}]
+		EXECUTE PROCEDURE trigger_function
+	
+
+
+```
 
 # create table
 ```
@@ -37,3 +49,8 @@ insert into book values (102, 'Database Query Language', 350.5, 5);
 ```
 select * from book;
 ```
+# Create a tigger for calculating total price 
+```
+
+```
+
