@@ -60,7 +60,7 @@ select * from book;
 ```
 /* TRIGGER FUNCTION */
 create or replace function calc_total_price()
-return trigger
+returns trigger
 as $body$
 declare
 	total numeric;
